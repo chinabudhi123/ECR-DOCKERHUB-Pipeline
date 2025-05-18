@@ -9,7 +9,7 @@ pipeline {
         DOCKER_HUB_USER = "satya44jit"
         DOCKERHUB_IMAGE = "${DOCKER_HUB_USER}/myapp:latest"
         // You must create this Jenkins credential with your Docker Hub password/token
-        DOCKER_HUB_PASS = credentials('docker-hub-password') 
+        DOCKER_HUB_PASS = credentials('dockerhub-credentials') 
 
         REMOTE_HOST = "ec2-user@13.201.124.43"
         REMOTE_APP_NAME = "httpd-app"
